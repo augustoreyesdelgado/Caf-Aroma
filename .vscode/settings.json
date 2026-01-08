@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        "."
+    ],
+    "java.project.referencedLibraries": [
+        "lib\\sqlite-jdbc-3.51.1.0.jar",
+        "c:\\Users\\augus\\OneDrive\\Documentos\\infotec\\g8\\Módulo IV\\proyecto cafetería\\Cafeteria_alt\\lib\\sqlite-jdbc-3.51.1.0.jar"
+    ]
+}
