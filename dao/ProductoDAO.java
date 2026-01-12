@@ -21,7 +21,7 @@ public class ProductoDAO {
             ps.setInt(3, p.getStock());
             ps.executeUpdate();
 
-        } catch (Exception e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }
@@ -44,7 +44,7 @@ public class ProductoDAO {
                 ));
             }
 
-        } catch (Exception e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
 
@@ -70,12 +70,13 @@ public class ProductoDAO {
                 );
             }
 
-        } catch (Exception e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
 
         return null;
     }
+
     public static void eliminarProductos() {
 
         String sqlVentas = "DELETE FROM productos";
@@ -85,7 +86,7 @@ public class ProductoDAO {
 
             st.execute(sqlVentas);
 
-        } catch (Exception e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }

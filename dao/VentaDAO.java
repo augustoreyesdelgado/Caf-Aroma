@@ -43,8 +43,9 @@ public class VentaDAO {
 
             conn.commit();
 
-        } catch (Exception e) {
+        } catch (SQLException e) {
             e.printStackTrace();
+            System.out.println("Error al guardar la venta.");
         }
     }
 
